@@ -1,0 +1,89 @@
+/* .container {
+    width: 80%;
+    margin: 0 auto;
+} */
+
+/* .row {
+    display: flex;
+    flex-wrap: nowrap;
+} */
+
+/* .col-6 {
+    width: 50%;
+    padding: 5px;
+} */
+
+/* input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+} */
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.success-message {
+    color: green;
+    font-weight: bold;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.container {
+    /* Add your container styles here */
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.row {
+    /* Add your row styles here */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.col-6 {
+    /* Add your column styles here */
+    width: 50%;
+    padding: 0 15px;
+}
+
+/* Media query for computers/laptops */
+@media (min-width: 1024px) {
+    .col-6 {
+        /* Adjust column width for larger screens if needed */
+        width: 50%;
+    }
+}
+
+/* Media query for tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .col-6 {
+        /* Adjust column width for tablets if needed */
+        width: 100%;
+    }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .col-6 {
+        /* Adjust column width for mobile devices if needed */
+        width: 100%;
+    }
+    input[type="text"],
+    input[type="email"] {
+        width: 80%;
+        padding: 8px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust other styles for mobile devices if needed */
+}
